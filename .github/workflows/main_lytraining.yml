@@ -57,8 +57,9 @@ jobs:
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
-        run: python3 main.py
         with:
           app-name: 'lytraining'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_13F0DFAC545746AFA3B0575FE80ADD98 }}
+      - name: Install dependencies
+        run: python main.py
