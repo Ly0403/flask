@@ -62,4 +62,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_13F0DFAC545746AFA3B0575FE80ADD98 }}
       - name: Install dependencies
-        run: python3 main.py
+        run: pip install flask; python main.py
