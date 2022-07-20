@@ -61,5 +61,3 @@ jobs:
           app-name: 'lytraining'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_13F0DFAC545746AFA3B0575FE80ADD98 }}
-      - name: Install dependencies
-        run: pip install flask; python main.py
